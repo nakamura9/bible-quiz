@@ -128,6 +128,51 @@ $(document).ready(function() {
             ],
             answer: 0
         },
+        {
+            question: 'What does the word apostle mean?',
+            options: [
+                'Disciple',
+                'One sent forth',
+                'Preacher of good news'
+            ],
+            answer: 1
+        },
+        {
+            question: 'Who was foretold to destroy the altar Jeroboam built in Bethel?',
+            options: [
+                'Josiah',
+                'Hezekaih',
+                'Jehoshaphat'
+            ],
+            answer: 0
+        },
+        {
+            question: 'What is a bath measure in modern units?',
+            options: [
+                '220L',
+                '22L',
+                'None of the above'
+            ],
+            answer: 1
+        },
+        {
+            question: 'How long is a cubit in centimeters?',
+            options: [
+                '44cm',
+                '40cm',
+                '42cm'
+            ],
+            answer: 0
+        },
+        {
+            question: 'How long was the ark of Noah?',
+            options: [
+                '300 cubits',
+                '400 cubits',
+                '150 cubits'
+            ],
+            answer: 0
+        },
     ]
     current_question = questions[current_question_id]
 
