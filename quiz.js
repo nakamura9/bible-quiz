@@ -90,16 +90,43 @@ $(document).ready(function() {
                 '900 BCE',
                 '960 BCE'
             ],
+            answer: 0
+        },
+        {
+            question: 'Who were the kings during Isaiahs time?',
+            options: [
+                'Uzziah, Jotham, Ahaz, Hezekiah.',
+                'Josiah, Ahaz, David.',
+                'Ishmael, Saul, Zechariah,'
+            ],
+            answer: 0
+        },
+        {
+            question: 'Who is the Author of Genesis?',
+            options: [
+                'Moses',
+                'Jehovah',
+                'Samuel'
+            ],
             answer: 1
         },
         {
-            question: 'Who was A descendant of Issachar?',
+            question: 'What is the meaning of the name Genesis?',
             options: [
-                'Abel',
-                'Joel',
-                'Ishmael'
+                'Origin',
+                'Death',
+                'Lifetime'
             ],
-            answer: 1
+            answer: 0
+        },
+        {
+            question: 'Who was a prophet during King Darius reign?',
+            options: [
+                'Obediah',
+                'Haggai',
+                'Samuel'
+            ],
+            answer: 0
         },
     ]
     current_question = questions[current_question_id]
