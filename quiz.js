@@ -72,7 +72,7 @@ $(document).ready(function() {
                 'Cain',
                 'Seth'
             ],
-            answer: 2
+            answer: 1
         },
         {
             question: 'Who was A descendant of Issachar?',
@@ -126,7 +126,7 @@ $(document).ready(function() {
                 'Haggai',
                 'Samuel'
             ],
-            answer: 0
+            answer: 1
         },
     ]
     current_question = questions[current_question_id]
