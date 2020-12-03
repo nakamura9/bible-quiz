@@ -146,7 +146,15 @@ $(document).ready(function() {
             ],
             answer: 1
         },
-
+        {
+            question: 'How old was Noah when he gave birth to his sons?',
+            options: [
+                '500',
+                '400',
+                '510'
+            ],
+            answer: 0
+        },
     ]
     current_question = questions[current_question_id]
 
