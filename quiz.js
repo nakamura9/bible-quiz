@@ -218,7 +218,8 @@ $(document).ready(function() {
         render()
     }
 
-    $('#next-btn').click(next) $('#answer-btn').click(function() {
+    $('#next-btn').click(next)
+    $('#answer-btn').click(function() {
         const answer = $('input[name=answer]:checked').val()
         if (answer == undefined) {
             alert('Please select one of the options as an answer')
