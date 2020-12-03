@@ -228,5 +228,6 @@ $(document).ready(function() {
         } else {
             alert('Oops! That is incorrect. the correct answer is: ' + current_question.options[current_question.answer])
         }
-    }) render()
+    })
+    render()
 })
