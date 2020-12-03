@@ -128,6 +128,25 @@ $(document).ready(function() {
             ],
             answer: 1
         },
+        {
+            question: 'How many Chapters are in the Bible?',
+            options: [
+                '1669',
+                '2041',
+                '1189'
+            ],
+            answer: 2
+        },
+        {
+            question: 'What does Haggais name mean?',
+            options: [
+                'Born on A Festival',
+                'Protector',
+                'Name Of God'
+            ],
+            answer: 1
+        },
+
     ]
     current_question = questions[current_question_id]
 
