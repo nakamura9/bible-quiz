@@ -3,70 +3,70 @@ $(document).ready(function() {
     let current_question_id = 0
     let current_question = null
     const questions = [{
-            question: 'Who is called Gods friend at James 2:23',
+            question: 'What was the estimated total of the Israelite Camp?',
+            options: [
+                '300,000',
+                '3,000,000',
+                '30,000,000'
+            ],
+            answer: 1
+        },
+        {
+            question: 'Ps65:2 is a scripture used for what sample conversation',
+            options: [
+                'Initial Call',
+                'Return visit 1',
+                'Return Visit 2'
+            ],
+            answer: 0
+        },
+        {
+            question: 'Who because of his weak eyesight blessed jacob instead of Esau?',
             options: [
                 'Abraham',
-                'Job',
-                'David'
-            ],
-            answer: 0
-        },
-        {
-            question: 'Who were Aarons sons who Jehovah executed',
-            options: [
-                'Hophni and Phineas',
-                'Nadab and Abihu',
-                'Esau and Isaac'
-            ],
-            answer: 1
-        },
-        {
-            question: 'Which scripture states: "Thier coming to know you"?',
-            options: [
-                'John 17:3',
-                'Mark 12:13',
-                'Revelation 21:3,4'
-            ],
-            answer: 0
-        },
-        {
-            question: 'Where was the Bible book of Mark written?',
-            options: [
-                'Jerusalem',
-                'Rome',
-                'Ceasarea'
-            ],
-            answer: 1
-        },
-        {
-            question: 'List the fruitage of the spirit.',
-            options: [
-                'Love, Joy, Peace, Patience, Faith, Goodness, Mildness, Self-control, Kindness.',
-                'Love , Respect, Honor, Peace, Patience, Kindness, Goodness, Joy, Loyalty.',
-                'I dont Remeber.'
-            ],
-            answer: 0
-        },
-        {
-            question: 'Who was the oldest man alive?',
-            options: [
-                'Adam',
-                'Cain',
-                'Methuselah'
+                'Joshua',
+                'Issac'
             ],
             answer: 2
         },
         {
-            question: 'At what Age did Adam have a son?',
+            question: 'Who was the father Of John The Baptizer?',
             options: [
-                '100',
-                '30',
-                '130'
+                'Zecheriah',
+                'Zephaniah',
+                'Jacob'
+            ],
+            answer: 0
+        },
+        {
+            question: 'Who asked Jesus: Are You the King of the Jews?',
+            options: [
+                'Herod',
+                'Nicodemus',
+                'Pilate'
             ],
             answer: 2
         },
         {
-            question: 'Who was Adams first son',
+            question: 'Who asked the Israelites to seperate from their foreign Wives?',
+            options: [
+                'Asa',
+                'Moses',
+                'Ezra'
+            ],
+            answer: 2
+        },
+        {
+            question: 'To whom was it allowed to use meat as food for the first time?',
+            options: [
+                'Noah',
+                'Moses',
+                'Aaron'
+            ],
+            answer: 0
+        },
+        {
+            question: 'To whom did Jehovah set up a sign that anyone who found him could not strike him?',
             options: [
                 'Abel',
                 'Cain',
@@ -75,31 +75,31 @@ $(document).ready(function() {
             answer: 1
         },
         {
-            question: 'Who was A descendant of Issachar?',
+            question: 'What prophet interpreted the words writtenon the wall during Belshazzars feast?',
             options: [
-                'Abel',
-                'Joel',
-                'Ishmael'
+                'Daniel',
+                'David',
+                'Jonah'
+            ],
+            answer: 0
+        },
+        {
+            question: 'Hadassah was the hebrew name of whom?',
+            options: [
+                'Esther',
+                'Prescilla',
+                'Mary'
+            ],
+            answer: 0
+        },
+        {
+            question: 'What woman sold purple in Phiippi and osted Paul?',
+            options: [
+                'Rebekah',
+                'Lydia',
+                'Eunice'
             ],
             answer: 1
-        },
-        {
-            question: 'Around what time did King David die?',
-            options: [
-                '970 BCE',
-                '900 BCE',
-                '960 BCE'
-            ],
-            answer: 0
-        },
-        {
-            question: 'Who were the kings during Isaiahs time?',
-            options: [
-                'Uzziah, Jotham, Ahaz, Hezekiah.',
-                'Josiah, Ahaz, David.',
-                'Ishmael, Saul, Zechariah,'
-            ],
-            answer: 0
         },
         {
             question: 'Who is the Author of Genesis?',
@@ -172,7 +172,7 @@ $(document).ready(function() {
             ],
             answer: 1
         }, {
-            question: 'How old was Noah when he gave birth to his sons?',
+            question: 'How old was Noah when his children were born',
             options: [
                 '500',
                 '400',
@@ -188,7 +188,111 @@ $(document).ready(function() {
             ],
             answer: 0
         }, {
+            question: 'Who plotted Naboths Death so that here husband would size his vineyard?',
+            options: [
+                'Athaliah',
+                'Jazebel',
+                'Eunice'
+            ],
+            answer: 1
+        }, {
+            question: 'Her first Husband was rude and ill; Her second husband was a king',
+            options: [
+                'Achsah',
+                'Sarah',
+                'Abigail'
+            ],
+            answer: 2
+        }, {
+            question: 'What king, being deceived, commanded that all the Jews in the Persian empire should be killed?',
+            options: [
+                'Hoshea',
+                'Zechariah',
+                'Ahaseurus'
+            ],
+            answer: 2
+        }, {
+            question: 'What King Forsook the counsel of the elders nd followed the advice from friends he grew up with?',
+            options: [
+                'Hiram',
+                'Rehoboam',
+                'Melchizedek'
+            ],
+            answer: 1
+        }, {
+            question: 'I was 98 years old when at the time of the deluge',
+            options: [
+                'Noah',
+                'Shem',
+                'David'
+            ],
+            answer: 2
+        }, {
+            question: 'What does the number 7 mean in the Bible?',
+            options: [
+                'Purity',
+                'Imperfection',
+                'Complete'
+            ],
+            answer: 2
+        }, {
+            question: 'How many creatures did Ezekial see in his vision?',
+            options: [
+                '8',
+                '4',
+                '5'
+            ],
+            answer: 1
+        }, {
+            question: 'When did the Jews exiled in Babylon return to Jerusalem?',
+            options: [
+                '677 B.C.E',
+                '600 B.C.E',
+                '537 B.C.E'
+            ],
+            answer: 2
+        }, {
+            question: 'When was Jesus Baptized?',
+            options: [
+                '33 C.E',
+                '29 C.E',
+                '30 C.E'
+            ],
+            answer: 0
+        }, {
+            question: 'How long did it take for the Bible to be written?',
+            options: [
+                '1 610 years',
+                '2 000 years',
+                '150 cubits'
+            ],
+            answer: 0
+        }, {
+            question: 'The river made in eden divides itself into 4. Which one does not belong in the list?',
+            options: [
+                'Euphrates',
+                'Nile',
+                'Pishon'
+            ],
+            answer: 1
+        }, {
             question: 'How long was the ark of Noah?',
+            options: [
+                '300 cubits',
+                '400 cubits',
+                '150 cubits'
+            ],
+            answer: 0
+        }, {
+            question: 'Where was Jeremiah thrown by the princes',
+            options: [
+                'Cistern',
+                'Lion Pit',
+                'Dungeon'
+            ],
+            answer: 0
+        }, {
+            question: 'On what island was the apostle ?',
             options: [
                 '300 cubits',
                 '400 cubits',
