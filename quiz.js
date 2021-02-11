@@ -292,13 +292,21 @@ $(document).ready(function() {
             ],
             answer: 0
         }, {
-            question: 'On what island was the apostle ?',
+            question: 'On what island was the apostle John exiled when he received the revelation of Jesus Christ?',
             options: [
-                '300 cubits',
-                '400 cubits',
-                '150 cubits'
+                'Patmos',
+                'Cyprus',
+                'Crete'
             ],
             answer: 0
+        }, {
+            question: 'Where did Rahab hide the spies?',
+            options: [
+                'In the closet',
+                'On the terrace',
+                'Under the bed'
+            ],
+            answer: 1
         },
     ]
 
