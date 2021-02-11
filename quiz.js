@@ -377,7 +377,8 @@ $(document).ready(function() {
                 'Luke',
                 'John',
                 "Matthew"
-            ]
+            ],
+            answer: 1
         }, {
             question: 'Where did Rahab hide the spies?',
             options: [
