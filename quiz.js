@@ -299,7 +299,89 @@ $(document).ready(function() {
                 '150 cubits'
             ],
             answer: 0
+        },{
+            question: 'Who wrote the book of Second Samuel?',
+            options: [
+                'Samuel',
+                'Jeremial',
+                'Nathan'
+            ],
+            answer: 2
+        },{
+            question: 'Where did Jeremiah finish the book of second kings ?',
+            options: [
+                'Jerusalem',
+                'Babylon',
+                'Egypt'
+            ],
+            answer: 2
+        },{
+            question: 'Which of these is not a city of refuge?',
+            options: [
+                'Bethel',
+                'Kedesh',
+                'Ramoth'
+            ],
+            answer: 0
+        },{
+            question: 'Which is the largest measure of mass/volume?',
+            options: [
+                'Homer',
+                'Ephah',
+                'Omer'
+            ],
+            answer: 0
+        },{
+            question: 'Purim is a Jewish festival celebrating?',
+            options: [
+                'The Exodus from Egypt',
+                'The rebuilding of the temple by the returning exiles',
+                "The deliverance from Haman's Genocide"
+            ],
+            answer: 2
+        },{
+            question: 'The festival of booths was done in which month?',
+            options: [
+                'Nisan',
+                'Tishri',
+                "Chislev"
+            ],
+            answer: 1
+        },{
+            question: 'What is the name of the second wild beast in Daniels vision of the 4 wild beasts?',
+            options: [
+                'Bear',
+                'Lion',
+                "Leopard"
+            ],
+            answer: 0
+        },{
+            question: 'What other prophet had a vision of locusts other than the Apostle John?',
+            options: [
+                'Amos',
+                'Joel',
+                "Nahum"
+            ],
+            answer: 1
+        },{
+            question: 'In what modern country is the marketplace of Appius located?',
+            options: [
+                'Italy',
+                'Syria',
+                "Greece"
+            ],
+            answer: 0
+        },{
+            question: 'Which bible book records Jesus first Miracle?',
+            options: [
+                'Luke',
+                'John',
+                "Matthew"
+            ],
+            answer: 1
         },
+
+        
     ]
 
     current_question = questions[current_question_id]
