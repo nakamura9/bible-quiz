@@ -10,19 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body>
-    <div class='flex flex-centered fill'>
-        <div class='card shadow card-md'>
-            <div class="card-body">
-                <h3>Question #<span id='q-no'></span></h3>
-            <p id="question"></p>
-            <form action="">
-                <ul id="options"></ul>
-            </form>
-            <button class="btn btn-primary" id='answer-btn'>Answer</button>
-            </div>
-        </div>
-    </div>
-    <button class="btn btn-success btn-pos" id='next-btn'>NEXT <i class="fa fa-caret-right" aria-hidden="true"></i></button>
-    <script src="quiz.js"></script>
+    <div id="root"></div>
+    <script src="/dist/main.js"></script>
 </body>
 </html>
