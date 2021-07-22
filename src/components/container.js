@@ -7,6 +7,459 @@ const client = createClient({
     accessToken: "MclG8vKz_CQ-BpharA3e0rcIk6DML4UORbz7538r4R8"
 })
 
+const questionList = [
+    {
+        "question": "It is better than weapons pf war",
+        "answer": "2",
+        "options": [
+            "wealth",
+            "wisdom",
+            "peace"
+        ]
+    },
+    {
+        "question": "It can weigh as much as 180 tons",
+        "answer": "3",
+        "options": [
+            "elephant",
+            "sun",
+            "whale"
+        ]
+    },
+    {
+        "question": "what is the boundary of the sea",
+        "answer": "3",
+        "options": [
+            "beach",
+            "seashore",
+            "sand"
+        ]
+    },
+    {
+        "question": "who are the heroes of the forests",
+        "answer": "3",
+        "options": [
+            "rain",
+            "soil ",
+            "earthworms"
+        ]
+    },
+    {
+        "question": "Besides the wonder of creation we must also hear",
+        "answer": "3",
+        "options": [
+            "noise",
+            "din",
+            "thunder"
+        ]
+    },
+    {
+        "question": "creation has .........as opposed to evolution which is chance",
+        "answer": "1",
+        "options": [
+            "goal",
+            "chance ",
+            "desire"
+        ]
+    },
+    {
+        "question": "Matt 7:21-23 can be summarized as .........speaks louder than words",
+        "answer": "1",
+        "options": [
+            "action",
+            "will",
+            "verbs"
+        ]
+    },
+    {
+        "question": "Babylon the great is religious because of its .......involvement",
+        "answer": "2",
+        "options": [
+            "educational",
+            "political",
+            "psychological"
+        ]
+    },
+    {
+        "question": "what is an example of systems of thisngs at Heb 11:3",
+        "answer": "2",
+        "options": [
+            "governments",
+            "solar",
+            "computer"
+        ]
+    },
+    {
+        "question": "who are the two witnesses of Revelation ",
+        "answer": "3",
+        "options": [
+            "russel",
+            "lorsch",
+            "annointed brs"
+        ]
+    },
+    {
+        "question": "Who wrote second Samuel?",
+        "answer": "1",
+        "options": [
+            "Gad",
+            "Samuel",
+            "Moses"
+        ]
+    },
+    {
+        "question": "Where did Peter write his letters?",
+        "answer": "3",
+        "options": [
+            "Jerusalem",
+            "Rome ",
+            "Babylon"
+        ]
+    },
+    {
+        "question": "Which Samaritan city did Jesus preach to the Samaritan woman at the well?",
+        "answer": "1",
+        "options": [
+            "Sychar",
+            "Samaria",
+            "Mt. Ebal"
+        ]
+    },
+    {
+        "question": "Jesus preached to Zachheus in which city?",
+        "answer": "2",
+        "options": [
+            "Jerusalem",
+            "Jericho",
+            "Capernaum"
+        ]
+    },
+    {
+        "question": "How many bulls were used to support the copper altar in Solomon's temple?",
+        "answer": "2",
+        "options": [
+            "7",
+            "12",
+            "4"
+        ]
+    },
+    {
+        "question": "What did Jehovah accomplish on the 4th creative day?",
+        "answer": "2",
+        "options": [
+            "Creation of Animals",
+            "Setting of the distinction between day and night.",
+            "Creation of plantlife"
+        ]
+    },
+    {
+        "question": "The festival of weeks fell in what Jewish month?",
+        "answer": "3",
+        "options": [
+            "Nisan",
+            "Chislev",
+            "Sivan"
+        ]
+    },
+    {
+        "question": "A drachma coin was equivalent to how many day's wages in Jesus' day?",
+        "answer": "3",
+        "options": [
+            "4",
+            "2",
+            "1"
+        ]
+    },
+    {
+        "question": "Who was NOT a contemporary of Jeremiah",
+        "answer": "1",
+        "options": [
+            "Micah",
+            "Nahum",
+            "Habakkuk"
+        ]
+    },
+    {
+        "question": "Which world power was represented by Gold in Daniel's vision?",
+        "answer": "2",
+        "options": [
+            "Medo-Persia",
+            "Babylon",
+            "Greece"
+        ]
+    },
+    {
+        "question": "Name the 4 world powers represented by the 4 metals of Nebuchadnezzar's Dream?",
+        "answer": "2",
+        "options": [
+            "Medo Persia-Gold Head,MedoPersia Silver breasts & arms,Greece- copper belly and thighs, Rome - iron legs",
+            "Babylon-Gold Head,MedoPersia Silver breasts & arms,Greece- copper belly and thighs, Rome - iron legs",
+            "Babylon-Gold Head,MedoPersia Silver breasts & arms,Babylon- copper belly and thighs, Rome - iron legs"
+        ]
+    },
+    {
+        "question": "What is the name of the woman that Peter resurrected?",
+        "answer": "1",
+        "options": [
+            "Thabitha",
+            "Eutycus",
+            "Dorcas"
+        ]
+    },
+    {
+        "question": "What was the firsts miracle Jesus performed?",
+        "answer": "2",
+        "options": [
+            "Healed a blind man",
+            "Turned water into wine",
+            "feed thousands with 5 loaves of bread and fish"
+        ]
+    },
+    {
+        "question": "What is the deliverance of the nation of Israel from Egyptian bondage known as?",
+        "answer": "2",
+        "options": [
+            "Depart",
+            "Exodus",
+            "Journey"
+        ]
+    },
+    {
+        "question": "Which books are known as Gospels?",
+        "answer": "3",
+        "options": [
+            "John, Acts, Peter, Mark",
+            "Mark, Luke, Titus, Timothy",
+            "Matthew, Mark, Luke, John"
+        ]
+    },
+    {
+        "question": "Name John the Baptist's Parents?",
+        "answer": "1",
+        "options": [
+            "Zechariah & Elizabeth",
+            "Mary and Joseph",
+            "Priscilla & Aquilla"
+        ]
+    },
+    {
+        "question": "What was Hannah's Husband's Name?",
+        "answer": "2",
+        "options": [
+            "Joseph",
+            "Elkanah",
+            "Samuel"
+        ]
+    },
+    {
+        "question": "The first one was like a lion and had wings of an Eagle",
+        "answer": "1",
+        "options": [
+            "Babylon",
+            "Rome",
+            "Greece"
+        ]
+    },
+    {
+        "question": "Name Jacob's Sons",
+        "answer": "1",
+        "options": [
+            "Asher, Ruben, Simon, Gad, Dan, Benjamin, Joseph, Zebulan, Naphthali, Judah, Levi, Issachar",
+            "Asher, Ruben, Simon, Gad, Dan, Abel, Joseph, Zebulan, Naphthali, Judah, Levi, Issachar",
+            "Asher, Ruben, Simon, Gad, Dan, Benjamin, Joseph, Zebulan, Naphthali, Judah, Levi, Isaac"
+        ]
+    },
+    {
+        "question": "Timothy's mother's name",
+        "answer": "2",
+        "options": [
+            "Mary",
+            "Eunice",
+            "Elizabeth"
+        ]
+    },
+    {
+        "question": "How many wives and concubine did Solomon have",
+        "answer": "1",
+        "options": [
+            "300 & 700",
+            "200&500",
+            "700&300"
+        ]
+    },
+    {
+        "question": "who only like Jesus is said to be an only begotten son and how so",
+        "answer": "3",
+        "options": [
+            "Joseph",
+            "Judah",
+            "Isaac because was Abraham's only son by Gods promise and only son by Sarah"
+        ]
+    },
+    {
+        "question": "which 2 gospels discuss the sermon on the mount",
+        "answer": "2",
+        "options": [
+            "Mathew and John",
+            "Mathew 5-7 and Luke 6",
+            "Luke and John"
+        ]
+    },
+    {
+        "question": "Who  became the  new apostle when Judas betrayed Jesus",
+        "answer": "1",
+        "options": [
+            "Matthias",
+            "James",
+            "Peter"
+        ]
+    },
+    {
+        "question": "name and describe the world powers foretold by Daniel",
+        "answer": "3",
+        "options": [
+            "Greece gold,Rome clay, anglo america silver , made persia clay and stone",
+            "anglo america Gold, medo Persia clay, Rome Gold, Babylon silver",
+            "Babylon gold, medo-Persia silver, Greece copper, Rome clay, Anglo America clay and iron"
+        ]
+    },
+    {
+        "question": "luke not an apostle. where get info on Jesus life",
+        "answer": "3",
+        "options": [
+            "Gods spirit",
+            "from friends",
+            "Ref from Mathew a account and interviews eg mary"
+        ]
+    },
+    {
+        "question": "what's difference disciple and apostle",
+        "answer": "3",
+        "options": [
+            "servant",
+            "slave",
+            "disciple learner, student apostle one sent forth eg the 12"
+        ]
+    },
+    {
+        "question": "what's the age difference between Jesus and John the Baptist ",
+        "answer": "1",
+        "options": [
+            "6 months ",
+            "1 year",
+            "9 months"
+        ]
+    },
+    {
+        "question": "what prophet was serving when Asa ruled",
+        "answer": "2",
+        "options": [
+            "Jeremiah",
+            "Elijah",
+            "Hoseah"
+        ]
+    },
+    {
+        "question": "how many new additions to Gods name have been found from recent research",
+        "answer": "1",
+        "options": [
+            "6",
+            "4",
+            "3"
+        ]
+    },
+    {
+        "question": "When was the passover done?",
+        "answer": "2",
+        "options": [
+            "14",
+            "33",
+            "607"
+        ]
+    },
+    {
+        "question": "Who was the first to be healed by Jesus?",
+        "answer": "1",
+        "options": [
+            "Deaf man",
+            "Blind man",
+            "Lazarus"
+        ]
+    },
+    {
+        "question": "Who was stonned for his Faith?",
+        "answer": "1",
+        "options": [
+            "Stephen",
+            "A Corinthian",
+            "Paul"
+        ]
+    },
+    {
+        "question": "How many days did it take for the ark to touch the ground?",
+        "answer": "3",
+        "options": [
+            "120 days",
+            "80 days",
+            "150 days"
+        ]
+    },
+    {
+        "question": "Which publication was realised in the recent Anual Meeting?",
+        "answer": "1",
+        "options": [
+            "Enjoy Life",
+            "NWT",
+            "The Emphasiezed Bible"
+        ]
+    },
+    {
+        "question": "When Jesus Died, Did Peter Catch fish?",
+        "answer": "1",
+        "options": [
+            "Yes",
+            "No",
+            "What?"
+        ]
+    },
+    {
+        "question": "Who comforted Jesus During his last few days?",
+        "answer": "2",
+        "options": [
+            "Peter",
+            "An Angel",
+            "John"
+        ]
+    },
+    {
+        "question": "How long did Adam live for?",
+        "answer": "2",
+        "options": [
+            "675",
+            "965",
+            "1065"
+        ]
+    },
+    {
+        "question": "There are ___ books in the Bible",
+        "answer": "3",
+        "options": [
+            "60",
+            "65",
+            "66"
+        ]
+    },
+    {
+        "question": "Who wrote the Bible book of Esther",
+        "answer": "1",
+        "options": [
+            "Mordecai",
+            "Moses",
+            "Esther"
+        ]
+    }
+]
+
 class BibleQuiz extends Component {
     state = {
         current_question: 0,
@@ -17,17 +470,17 @@ class BibleQuiz extends Component {
         correct_percentage: 0,
         correct: [],
         incorrect: [],
-        questions: []
+        questions: questionList
     }
 
-    componentDidMount() {
-        client.getEntries({
-            content_type: 'question'
-        }).then(res => {
-            console.log(res)
-            this.setState({questions: res.items.map(q => q.fields)})
-        })
-    }
+    // componentDidMount() {
+    //     client.getEntries({
+    //         content_type: 'question'
+    //     }).then(res => {
+    //         console.log(res)
+    //         this.setState({questions: res.items.map(q => q.fields)})
+    //     })
+    // }
 
     setName = (evt) => {
         this.setState({name: evt.target.value})
