@@ -8,7 +8,7 @@ const Question = (props) => {
             return
         }
 
-        if(answer === props.answer) {
+        if(parseInt(answer) === parseInt(props.answer)) {
             alert('Correct! You have earned 1 point.')
         } else {
             alert(`Sorry that answer is incorrect. The correct answer is '${props.options[props.answer - 1]}'`)
